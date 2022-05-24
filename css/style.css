@@ -4,3 +4,17 @@ body{
     width: 100vw;
     height: 100vh;
 }
+.whatsapp{
+    background-color: #E6DFD6;
+    max-width: 1000px;
+    margin:auto;
+}
+header{
+    height: 50px;
+}
+.box_avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: pink;
+}
