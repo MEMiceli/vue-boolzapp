@@ -18,7 +18,9 @@
         <div class="app_left">
             <header class="linecontact">
                 <div class="header_avatar">
-                    <div class="box_avatar"></div>
+                    <div class="box_avatar">
+                        <img src="img/avatar_io.jpg">
+                    </div>
                 </div>
                 <div class="header_button">
                     <div><i class="fa-solid fa-circle-notch"></i> <i class="fa-solid fa-message"></i> <i class="fa-solid fa-ellipsis-vertical"></i></div>
@@ -33,8 +35,11 @@
             </div>
             <div class="contact">
                 <ul>
-                    <li class="linecontact" v-for="contact in contacts"><div class="box_avatar"></div><p>{{contact.name}}</p></li>
-                    <li class="linecontact"><div class="box_avatar"></div><p>imprecando si imparA</p></li>
+                    <li class="linecontact" v-for="(contact, index) in contacts">
+                        <div class="box_avatar"> <img :src="`img/avatar${contact.avatar}.jpg`" alt="{contact.name}} "></div>
+                        <h5>{{contact.name}}</h5>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
