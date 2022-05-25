@@ -41,7 +41,7 @@ button{
 .chatinput{
     width: calc(100% - 3.75rem)
 }
-.class{
+.app{
     background-color: #E6DFD6;
     max-width: 1000px;
     height: calc(100% - 1.25rem);
@@ -69,12 +69,10 @@ header{
 .app_left{
     width: 30%;
     background-color: #E6DFD6;
-
 }
 .app_right{
     width: 70%;
     background-color: #E6DFD6;
-    ;
 }
 
 .box_avatar{
@@ -93,8 +91,8 @@ header{
 }
 
 .contact{
-    overflow: hidden;
-    z-index: -1;     
+    overflow: auto;
+        
 }
 /* // text// */
 .fa-solid{
