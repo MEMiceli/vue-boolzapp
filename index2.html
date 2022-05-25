@@ -33,9 +33,7 @@
             </div>
             <div class="contact">
                 <ul>
-                    <li class="linecontact"><div class="box_avatar"></div><p>imprecando si imparA</p></li>
-                    <li class="linecontact"><div class="box_avatar"></div><p>imprecando si imparA</p></li>
-                    <li class="linecontact"><div class="box_avatar"></div><p>imprecando si imparA</p></li>
+                    <li class="linecontact" v-for="contact in contacts"><div class="box_avatar"></div><p>{{contact.name}}</p></li>
                     <li class="linecontact"><div class="box_avatar"></div><p>imprecando si imparA</p></li>
                 </ul>
             </div>
