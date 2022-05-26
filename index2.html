@@ -27,7 +27,7 @@
                 </div>
             </header>
             <div class="linecontact notification">
-                <div class="box_avatar"></div>
+                <div class="box_avatar"><i class="fa-solid fa-bell-slash"></i></div>
             </div>
             <div class="searchbar linecontact">
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -35,9 +35,13 @@
             </div>
             <div class="contact">
                 <ul>
-                    <li class="linecontact" v-for="(contact, index) in contacts">
+                    <li class="linecontact" v-for="(contact, index) in contacts" @click="changeChat">
                         <div class="box_avatar"> <img :src="`img/avatar${contact.avatar}.jpg`" alt="{contact.name}} "></div>
-                        <h5>{{contact.name}}</h5>
+                        <div class="infocontact">
+                            <div class="contactname">{{contact.name}}</div>
+                            <div class="lastmessage">{{lastMessage(contact)}}</div>
+                            <div class="lastcontact"></div>
+                        </div>   
                     </li>
                     
                 </ul>
@@ -48,6 +52,10 @@
             <header class="linecontact">
                 <div class="header_avatar">
                     <div class="box_avatar"></div>
+                </div>
+                <div class="area_chat">
+                    <div class="sent"></div>
+                    <div class="received"></div>
                 </div>
                 <div class="header_button">
                     <div><i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-paperclip"></i><i class="fa-solid fa-ellipsis-vertical"></i></div>

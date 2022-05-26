@@ -86,9 +86,10 @@ header{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: pink;
+    background-color: white;
     text-align: center;
     line-height: 40px;
+    overflow: hidden;
 }
 .box_avatar img{
     width: 40px;
@@ -100,16 +101,25 @@ header{
     display: flex;
     height: 3.125rem;
     padding: 0 0 .3125rem .3125rem;
+    background-color: inherit;
+    /* border:1px solid #E6DFD6; */
 }
 
 .contact{
-    overflow: auto;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: white;
+    height: 82%;
         
 }
 /* // text// */
 .fa-solid{
     color: silver;
     font-size: 20px;
+}
+.lastmessage{
+    font-size: smaller;
+    color: silver;
 }
 .notification{
     background-color: #8EDAFC;

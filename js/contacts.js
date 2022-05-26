@@ -1,6 +1,7 @@
 const app = new Vue({
     el: '#app',
     data: {
+        currentIndex: 0,
         contacts: [
             {
                 name: 'Michele',
@@ -166,6 +167,15 @@ const app = new Vue({
         ],
     },
     methods:{
+        changeChat(index){
+            this.currentIndex = index;
+
+        },
+        lastMessage(contact){
+            const mess = contact.messages[contact.messages.length - 1];
+            console.log(contact.messages[contact.messages.length - 1]);
+            return mess.message;
+        },
 
     },
 })
