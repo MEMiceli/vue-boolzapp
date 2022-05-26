@@ -136,15 +136,28 @@ header{
 .notification{
     background-color: #8EDAFC;
 }
-
+/* ////// area chat/\\\\\ */
 .areachat{
     width: 100%;
     height: calc(90vh - 50px);
     /* background-color: white; */
     background-image: url("../img/mine.jpg");
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    padding: 10px;
+
 }
-
-
+.messages{
+    background-color: white;
+    padding: .625rem;
+    border-radius: .625rem;
+    max-width: 50%;
+}
+.sent{
+    background-color: aquamarine;
+    align-self: flex-end;
+}
 .form-floating{
     background-color: white;
     height: 50px;

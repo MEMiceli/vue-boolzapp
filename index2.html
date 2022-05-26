@@ -67,8 +67,8 @@
 
             </header>
             <div class="areachat">
-                <div class="messages" v-for="message in contacts[currentIndex].messages">
-                    {{message}}
+                <div class="messages" v-for="message in contacts[currentIndex].messages" :class="message.status">
+                    {{message.message}}
 
                     
                 </div>
