@@ -57,6 +57,10 @@
                 <div class="header_avatar">
                     <div class="box_avatar"> 
                         <img :src="`img/avatar${contacts[currentIndex].avatar}.jpg`" alt="{contacts[currentIndex].name}}">
+                    </div>
+                    <div class="infocontact infoheader">
+                        <div class="nameandHour"><div class="contactname">{{contacts[currentIndex].name}}</div>
+                        <div class="lastcontact smaller">Ultimo messaggio oggi alle{{lastMessageHour(contacts[currentIndex])}}</div></div>    
                     </div>    
                 </div>  
                 <div class="header_button">

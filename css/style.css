@@ -67,6 +67,13 @@ header{
     justify-content: space-between;
     
 }
+.header_avatar{
+    display: flex;
+}
+
+/* .infoheader{
+    display: block;
+} */
 .header_button{
     line-height: 3.125rem;
 }
