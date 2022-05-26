@@ -105,6 +105,18 @@ header{
     /* border:1px solid #E6DFD6; */
 }
 
+.nameandHour{
+    display: flex;
+    /* ///////// da rivedere l'allineamento\\\\\\\
+    justify-content: space-between; */
+
+}
+.contactname{
+    /* align-self: flex-end; */
+}
+.lastcontact{
+
+}
 .contact{
     overflow: hidden;
     overflow-y: auto;
@@ -117,7 +129,7 @@ header{
     color: silver;
     font-size: 20px;
 }
-.lastmessage{
+.smaller{
     font-size: smaller;
     color: silver;
 }

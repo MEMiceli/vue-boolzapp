@@ -40,9 +40,11 @@
                     <li class="linecontact" v-for="(contact, index) in contacts" @click="changeChat">
                         <div class="box_avatar"> <img :src="`img/avatar${contact.avatar}.jpg`" alt="{contact.name}} "></div>
                         <div class="infocontact">
-                            <div class="contactname">{{contact.name}}</div>
-                            <div class="lastmessage">{{lastMessage(contact)}}</div>
-                            <div class="lastcontact">{{lastMessageHour(contact)}}</div>
+                            <div class="nameandHour"><div class="contactname">{{contact.name}}</div>
+                            <div class="lastcontact smaller">{{lastMessageHour(contact)}}</div></div>
+                            
+                            <div class="lastmessage smaller">{{lastMessage(contact)}}</div>
+                            
                         </div>   
                     </li>
                     
