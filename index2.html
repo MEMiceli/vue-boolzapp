@@ -55,24 +55,18 @@
         <div class="app_right">
             <header class="linecontact">
                 <div class="header_avatar">
-                    <div class="box_avatar"></div>
-                </div>
-                <div class="area_chat">
-                    <div class="sent"></div>
-                    <div class="received"></div>
-                </div>
+                    <div class="box_avatar"> 
+                        <img :src="`img/avatar${contacts[currentIndex].avatar}.jpg`" alt="{contacts[currentIndex].name}}">
+                    </div>    
+                </div>  
                 <div class="header_button">
                     <div><i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-paperclip"></i><i class="fa-solid fa-ellipsis-vertical"></i></div>
                 </div>
-
             </header>
             <div class="areachat">
                 <div class="messages" v-for="message in contacts[currentIndex].messages" :class="message.status">
-                    {{message.message}}
-
-                    
+                    {{message.message}} 
                 </div>
-            
             </div>
             <footer class="lineacontact">
                 <i class="fa-solid fa-face-smile"></i>
