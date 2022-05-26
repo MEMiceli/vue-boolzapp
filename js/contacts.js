@@ -169,6 +169,7 @@ const app = new Vue({
     methods:{
         changeChat(index){
             this.currentIndex = index;
+            console.log(index)
 
         },
         lastMessage(contact){

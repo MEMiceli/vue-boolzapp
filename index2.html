@@ -37,7 +37,7 @@
             </div>
             <div class="contact">
                 <ul>
-                    <li class="linecontact" v-for="(contact, index) in contacts" @click="changeChat">
+                    <li class="linecontact" v-for="(contact, index) in contacts" @click="changeChat(index)">
                         <div class="box_avatar"> <img :src="`img/avatar${contact.avatar}.jpg`" alt="{contact.name}} "></div>
                         <div class="infocontact">
                             <div class="nameandHour"><div class="contactname">{{contact.name}}</div>
@@ -67,7 +67,7 @@
 
             </header>
             <div class="areachat">
-                <div class="messages" v-for="message in contacts[0].messages">
+                <div class="messages" v-for="message in contacts[currentIndex].messages">
                     {{message}}
 
                     
