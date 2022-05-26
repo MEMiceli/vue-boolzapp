@@ -176,6 +176,12 @@ const app = new Vue({
             console.log(contact.messages[contact.messages.length - 1]);
             return mess.message;
         },
+        lastMessageHour(contact){
+            const DateTime = luxon.DateTime;
+            const mess = contact.messages[contact.messages.length - 1];
+            console.log(DateTime.fromFormat(mess.date, "dd/MM/yyyy HH:mm:ss").toFormat("HH:mm"));
+            return DateTime.fromFormat(mess.date, "dd/MM/yyyy HH:mm:ss").toFormat("HH:mm");
+        },
 
     },
 })
