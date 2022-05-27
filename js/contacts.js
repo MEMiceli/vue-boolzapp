@@ -197,6 +197,7 @@ const app = new Vue({
             this.autoreply();
         },
         autoreply(){
+            pippo = this;
             setTimeout(function() {
                 const DateTime = luxon.DateTime;
                 const neWmessage = {
@@ -204,7 +205,7 @@ const app = new Vue({
                     message: 'guarda che hai sbagliato persona',
                     status: 'received'                                
                 };            
-                 this.contacts[this.currentIndex].messages.push(neWmessage);                       
+                 pippo.contacts[pippo.currentIndex].messages.push(neWmessage);                       
             }, 1000);
             
         }
