@@ -72,11 +72,12 @@
                     {{message.message}} 
                 </div>
             </div>
-            <footer class="lineacontact">
+            <footer class="linecontact" @submit.prevent="sendMessage">
                 <i class="fa-solid fa-face-smile"></i>
-                <input class="chatinput" type="text" placeholder="Scrivi un messaggio" name="write">
+                <form class="chatinput">
+                    <input  type="text" placeholder="Scrivi un messaggio" name="write" v-model="newMessage" required pattern=".*\S+.*">
+                </form>
                 <i class="fa-solid fa-microphone"></i>
-
             </footer>
         </div>
 

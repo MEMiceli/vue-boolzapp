@@ -165,6 +165,7 @@ const app = new Vue({
                 ],
             }
         ],
+        newMessage:'',
     },
     methods:{
         changeChat(index){
@@ -183,6 +184,17 @@ const app = new Vue({
             console.log(DateTime.fromFormat(mess.date, "dd/MM/yyyy HH:mm:ss").toFormat("HH:mm"));
             return DateTime.fromFormat(mess.date, "dd/MM/yyyy HH:mm:ss").toFormat("HH:mm");
         },
+        sendMessage(){
+            const DateTime = luxon.DateTime;
+            const neWmessage = {
+                    date: DateTime.now().toFormat("dd/MM/yyyy HH:mm:ss"),
+                    message: this.newMessage,
+                    status: 'sent'
+            };
+            this.contacts[this.currentIndex].messages.push(neWmessage);
+            this.newMessage = '';  
+            // alert("bestemmia");
+        }
 
     },
 })

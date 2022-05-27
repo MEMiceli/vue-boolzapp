@@ -44,7 +44,7 @@ button{
     width: calc(100% - 1.875rem);
 }
 .chatinput{
-    width: calc(100% - 3.75rem)
+   max-width:100%; 
 }
 .app{
     background-color: #E6DFD6;
@@ -86,6 +86,10 @@ header{
 .app_right{
     width: 70%;
     background-color: #E6DFD6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space space-between;
+
 }
 
 .box_avatar{
@@ -118,12 +122,12 @@ header{
     justify-content: space-between; */
 
 }
-.contactname{
+/* .contactname{
     /* align-self: flex-end; */
-}
+/* }
 .lastcontact{
 
-}
+} */ */
 .contact{
     overflow: hidden;
     overflow-y: auto;
@@ -131,6 +135,9 @@ header{
     height: 82%;
         
 }
+/* .lastcontact{
+    margin-left: auto;
+} */
 /* // text// */
 .fa-solid{
     color: silver;
@@ -169,5 +176,8 @@ header{
     background-color: white;
     height: 50px;
     border-radius: 5px;
-
 }
+/* in style da inspector funziona, da css no
+.chatinput{
+    width: 100%;
+} */
