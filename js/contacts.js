@@ -194,6 +194,19 @@ const app = new Vue({
             this.contacts[this.currentIndex].messages.push(neWmessage);
             this.newMessage = '';  
             // alert("bestemmia");
+            this.autoreply();
+        },
+        autoreply(){
+            setTimeout(function() {
+                const DateTime = luxon.DateTime;
+                const neWmessage = {
+                    date: DateTime.now().toFormat("dd/MM/yyyy HH:mm:ss"),
+                    message: 'guarda che hai sbagliato persona',
+                    status: 'received'                                
+                };            
+                 this.contacts[this.currentIndex].messages.push(neWmessage);                       
+            }, 1000);
+            
         }
 
     },
