@@ -166,6 +166,7 @@ const app = new Vue({
             }
         ],
         newMessage:'',
+        searchQuery: null,
     },
     methods:{
         changeChat(index){
@@ -211,5 +212,17 @@ const app = new Vue({
         }
 
     },
+    // computed:{
+    //     search(){
+    //         if(this.search){
+    //         this.contacts.filter((item)=>{
+    //          this.searchQuery.toLowerCase().split(' ').every(v => item.contact.toLowerCase().includes(v))
+    //         })
+    //         }else{
+    //             this.contacts;
+    //         }    
+            
+    //     }
+    // }
 })
 
